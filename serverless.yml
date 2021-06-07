@@ -26,6 +26,17 @@ provider:
       - dynamodb:GetMetricStatistics
       Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
       
+    - Effect: Allow
+      Action:
+        - comprehend:BatchDetectDominantLanguage
+        - comprehend:DetectDominantLanguage
+      Resource: "*"
+      
+    - Effect: Allow
+      Action:
+        - translate:TranslatedText
+        - cloudwatch:GetMetricStatistics
+        
 resources:
   Resources:
     TodosDynamoDbTable:
@@ -44,18 +55,7 @@ resources:
           ReadCapacityUnits: 1
           WriteCapacityUnits: 1
         TableName: ${self:provider.environment.DYNAMODB_TABLE}
-      
-    - Effect: Allow
-      Action:
-        - comprehend:BatchDetectDominantLanguage
-        - comprehend:DetectDominantLanguage
-      Resource: "*"
-      
-    - Effect: Allow
-      Action:
-        - translate:TranslatedText
-        - cloudwatch:GetMetricStatistics
-        
+
 functions:
   create:
     handler: todos/create.create
