@@ -46,7 +46,12 @@ def get(event, context):
         "statusCode": 200,
         "body": json.dumps(result['Item'],
                             cls=decimalencoder.DecimalEncoder)
+<<<<<<< HEAD
     }
+=======
+                }
+    
+>>>>>>> feature/translate_function
 return response
 
 #translate = boto3.client('translate')

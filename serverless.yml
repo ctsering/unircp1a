@@ -1,9 +1,7 @@
 org: ctsering
 app: todo-list-serverless
 service: api-rest
-
 frameworkVersion: ">=1.1.0"
-
 provider:
   name: aws
   runtime: python3.8
@@ -19,7 +17,17 @@ provider:
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
       Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
-
+    - Effect: Allow
+      Action:
+        - comprehend:BatchDetectDominantLanguage
+        - comprehend:DetectDominantLanguage
+      Resource: "*"
+    - Effect: Allow
+      Action:
+        - translate:TranslatedText
+        - cloudwatch:GetMetricStatistics
+        - cloudwatch:ListMetrics
+      Resource: "*"
 functions:
   create:
     handler: todos/create.create
@@ -28,7 +36,6 @@ functions:
           path: todos
           method: post
           cors: true
-
   list:
     handler: todos/list.list
     events:
@@ -36,7 +43,6 @@ functions:
           path: todos
           method: get
           cors: true
-
   get:
     handler: todos/get.get
     events:
@@ -44,7 +50,6 @@ functions:
           path: todos/{id}
           method: get
           cors: true
-
   update:
     handler: todos/update.update
     events:
@@ -52,7 +57,6 @@ functions:
           path: todos/{id}
           method: put
           cors: true
-
   delete:
     handler: todos/delete.delete
     events:
@@ -60,7 +64,13 @@ functions:
           path: todos/{id}
           method: delete
           cors: true
-
+  translate:
+    handler: todos/Translate.get
+    events:
+      - http:
+          path: todos/{id}/{lang}
+          method: get
+          cors: true
 resources:
   Resources:
     TodosDynamoDbTable:
