@@ -296,7 +296,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-rest/dev/1623478535326-2021-06-12T06:15:35.326Z/api-rest.zip"
+          "S3Key": "serverless/api-rest/dev/1623528647551-2021-06-12T20:10:47.551Z/api-rest.zip"
         },
         "Handler": "s_create.handler",
         "Runtime": "python3.8",
@@ -326,7 +326,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-rest/dev/1623478535326-2021-06-12T06:15:35.326Z/api-rest.zip"
+          "S3Key": "serverless/api-rest/dev/1623528647551-2021-06-12T20:10:47.551Z/api-rest.zip"
         },
         "Handler": "s_list.handler",
         "Runtime": "python3.8",
@@ -356,7 +356,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-rest/dev/1623478535326-2021-06-12T06:15:35.326Z/api-rest.zip"
+          "S3Key": "serverless/api-rest/dev/1623528647551-2021-06-12T20:10:47.551Z/api-rest.zip"
         },
         "Handler": "s_get.handler",
         "Runtime": "python3.8",
@@ -386,7 +386,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-rest/dev/1623478535326-2021-06-12T06:15:35.326Z/api-rest.zip"
+          "S3Key": "serverless/api-rest/dev/1623528647551-2021-06-12T20:10:47.551Z/api-rest.zip"
         },
         "Handler": "s_update.handler",
         "Runtime": "python3.8",
@@ -416,7 +416,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-rest/dev/1623478535326-2021-06-12T06:15:35.326Z/api-rest.zip"
+          "S3Key": "serverless/api-rest/dev/1623528647551-2021-06-12T20:10:47.551Z/api-rest.zip"
         },
         "Handler": "s_delete.handler",
         "Runtime": "python3.8",
@@ -446,7 +446,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-rest/dev/1623478535326-2021-06-12T06:15:35.326Z/api-rest.zip"
+          "S3Key": "serverless/api-rest/dev/1623528647551-2021-06-12T20:10:47.551Z/api-rest.zip"
         },
         "Handler": "s_translate.handler",
         "Runtime": "python3.8",
@@ -469,64 +469,64 @@
         "TranslateLogGroup"
       ]
     },
-    "ListLambdaVersionl6vYRCFkTMynBtWLi7d3elzIEsK2h1rmOyPH2tqMdf4": {
+    "ListLambdaVersionnbgBGIJdwlxKtg2mFVUUpQ4I9gMyN0Xr0KTVGLbB7w": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ListLambdaFunction"
         },
-        "CodeSha256": "9RPuNJ+9nyLkPTpi9zEqmkQ0uZ6BUD4vP9EOE18XFK4="
+        "CodeSha256": "5A56l94s9ui6yhLGYsHA7JAewTFNSS69SPK3JLa24cM="
       }
     },
-    "GetLambdaVersion8NLBFFEo7G1UMLB3bxcYjhG1CFssGbNyaVGx0mU3bo": {
+    "GetLambdaVersionepkGloS3H7mkNLt1FZs97JiAuCZyuyfrXeh8HCFsVlY": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetLambdaFunction"
         },
-        "CodeSha256": "9RPuNJ+9nyLkPTpi9zEqmkQ0uZ6BUD4vP9EOE18XFK4="
+        "CodeSha256": "5A56l94s9ui6yhLGYsHA7JAewTFNSS69SPK3JLa24cM="
       }
     },
-    "UpdateLambdaVersionGFdkKEciISVORP0bSrD8VylEdmatmLWeONerxmuSQ": {
+    "UpdateLambdaVersionRCQNXXTsB1SKwCCBZIBG3S9emSCOd2lH8IgtFdZRJOo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateLambdaFunction"
         },
-        "CodeSha256": "9RPuNJ+9nyLkPTpi9zEqmkQ0uZ6BUD4vP9EOE18XFK4="
+        "CodeSha256": "5A56l94s9ui6yhLGYsHA7JAewTFNSS69SPK3JLa24cM="
       }
     },
-    "DeleteLambdaVersionwv5GOrclsNhAsHxYzNX6Fkr0H395MiK4Dezk20ima8": {
+    "DeleteLambdaVersionT2n6BH3CbKgodcHs2scUk8fS7wPvUIlxpR35ZF5tfQ": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteLambdaFunction"
         },
-        "CodeSha256": "9RPuNJ+9nyLkPTpi9zEqmkQ0uZ6BUD4vP9EOE18XFK4="
+        "CodeSha256": "5A56l94s9ui6yhLGYsHA7JAewTFNSS69SPK3JLa24cM="
       }
     },
-    "TranslateLambdaVersioniJEkYGInLW8cjsmpOjt6eGE9T1aYFDHiRmjZ6Pr5UY": {
+    "TranslateLambdaVersionxMKUMUBs7uxkmzemUSfWtxOAMZ78ad8vyhvGASWho": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "TranslateLambdaFunction"
         },
-        "CodeSha256": "9RPuNJ+9nyLkPTpi9zEqmkQ0uZ6BUD4vP9EOE18XFK4="
+        "CodeSha256": "5A56l94s9ui6yhLGYsHA7JAewTFNSS69SPK3JLa24cM="
       }
     },
-    "CreateLambdaVersionPVOVVeB4roAjI722BVUYldPx4FUNixietol6BC6w": {
+    "CreateLambdaVersionvUgV0Sdrb4vk7l7W1ttyMlabI8B51JUNAr3WL0Gfrw": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateLambdaFunction"
         },
-        "CodeSha256": "9RPuNJ+9nyLkPTpi9zEqmkQ0uZ6BUD4vP9EOE18XFK4="
+        "CodeSha256": "5A56l94s9ui6yhLGYsHA7JAewTFNSS69SPK3JLa24cM="
       }
     },
     "ApiGatewayRestApi": {
@@ -973,7 +973,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1623478527498": {
+    "ApiGatewayDeployment1623528641688": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -1324,7 +1324,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/api-rest/dev/1623478535326-2021-06-12T06:15:35.326Z/custom-resources.zip"
+          "S3Key": "serverless/api-rest/dev/1623528647551-2021-06-12T20:10:47.551Z/custom-resources.zip"
         },
         "FunctionName": "api-rest-dev-custom-resource-apigw-cw-role",
         "Handler": "apiGatewayCloudWatchRole/handler.handler",
@@ -1459,7 +1459,7 @@
     "ListLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ListLambdaVersionl6vYRCFkTMynBtWLi7d3elzIEsK2h1rmOyPH2tqMdf4"
+        "Ref": "ListLambdaVersionnbgBGIJdwlxKtg2mFVUUpQ4I9gMyN0Xr0KTVGLbB7w"
       },
       "Export": {
         "Name": "sls-api-rest-dev-ListLambdaFunctionQualifiedArn"
@@ -1468,7 +1468,7 @@
     "GetLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetLambdaVersion8NLBFFEo7G1UMLB3bxcYjhG1CFssGbNyaVGx0mU3bo"
+        "Ref": "GetLambdaVersionepkGloS3H7mkNLt1FZs97JiAuCZyuyfrXeh8HCFsVlY"
       },
       "Export": {
         "Name": "sls-api-rest-dev-GetLambdaFunctionQualifiedArn"
@@ -1477,7 +1477,7 @@
     "UpdateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateLambdaVersionGFdkKEciISVORP0bSrD8VylEdmatmLWeONerxmuSQ"
+        "Ref": "UpdateLambdaVersionRCQNXXTsB1SKwCCBZIBG3S9emSCOd2lH8IgtFdZRJOo"
       },
       "Export": {
         "Name": "sls-api-rest-dev-UpdateLambdaFunctionQualifiedArn"
@@ -1486,7 +1486,7 @@
     "DeleteLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteLambdaVersionwv5GOrclsNhAsHxYzNX6Fkr0H395MiK4Dezk20ima8"
+        "Ref": "DeleteLambdaVersionT2n6BH3CbKgodcHs2scUk8fS7wPvUIlxpR35ZF5tfQ"
       },
       "Export": {
         "Name": "sls-api-rest-dev-DeleteLambdaFunctionQualifiedArn"
@@ -1495,7 +1495,7 @@
     "TranslateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "TranslateLambdaVersioniJEkYGInLW8cjsmpOjt6eGE9T1aYFDHiRmjZ6Pr5UY"
+        "Ref": "TranslateLambdaVersionxMKUMUBs7uxkmzemUSfWtxOAMZ78ad8vyhvGASWho"
       },
       "Export": {
         "Name": "sls-api-rest-dev-TranslateLambdaFunctionQualifiedArn"
@@ -1504,7 +1504,7 @@
     "CreateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateLambdaVersionPVOVVeB4roAjI722BVUYldPx4FUNixietol6BC6w"
+        "Ref": "CreateLambdaVersionvUgV0Sdrb4vk7l7W1ttyMlabI8B51JUNAr3WL0Gfrw"
       },
       "Export": {
         "Name": "sls-api-rest-dev-CreateLambdaFunctionQualifiedArn"
