@@ -46,14 +46,4 @@ def get(event, context):
         "statusCode": 200,
         "body": json.dumps(result['Item'],
                             cls=decimalencoder.DecimalEncoder)
-                }
-    
-return response
-
-#translate = boto3.client('translate')
-#result = translate.translate_text(Text="Hello, World",
-#                                  SourceLanguageCode="en",
-#                                  TargetLanguageCode="de")
-#print(f'TranslatedText: {result["TranslatedText"]}')
-#print(f'SourceLanguageCode: {result["SourceLanguageCode"]}')
-#print(f'TargetLanguageCode: {result["TargetLanguageCode"]}')
+}
