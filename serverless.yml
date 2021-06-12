@@ -65,7 +65,7 @@ functions:
           method: delete
           cors: true
   translate:
-    handler: todos/Translate.get
+    handler: todos/getTranslate.get
     events:
       - http:
           path: todos/{id}/{lang}
