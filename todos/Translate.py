@@ -1,7 +1,7 @@
 import os
 import json
 import boto3
-
+#Cometario de ejecución
 from todos import decimalencoder
 
 dynamodb = boto3.resources('dynamodb')
