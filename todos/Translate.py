@@ -30,6 +30,7 @@ def get(event, context):
             'id': event['pathParameters']['id']
             }
         )
+    #Comentario
     
     target = event['pathParameters']['lang']
     
